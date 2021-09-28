@@ -1,0 +1,392 @@
+html {
+    font-size: 62.5%;
+    font-family: "ヒラギノ角ゴ ProN W3";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1920px;
+    font-size: 1.4rem;
+    background-color: #bcf5c5;
+}
+.firstView img {
+    width: 100%;
+}
+.firstView_iphone {
+    display: none;
+}
+.container {
+    max-width: 1146px;
+    margin: 0 20.5%;
+}
+
+.bread {
+    max-width: 1146px;
+    margin: 0;
+}
+
+.bread ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 15px;
+}
+.bread li a {
+    padding-right: 8px;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+.bread li:after {
+    content:'\003e';
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.bread li:last-child:after {
+    content: "";
+}
+.form {
+    border-top: solid 10px #5bf273 ;
+    border-radius: 10px;
+    max-width: 1146px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.form-height {
+    margin-top: 20px;
+}
+
+.form h1 {
+    margin: 20px 20px 10px 20px;
+    color: #5e5e5e;
+}
+.form h2 {
+    margin-left: 20px;
+    color: #5e5e5e;
+}
+.form p {
+    margin-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ff2e2e;
+}
+.form-title h2{
+    margin: 20px 20px 10px 20px;
+}
+.form-title h2 span {
+    color: #ff2e2e;
+}
+.form-title-height p {
+    padding: 0;
+}
+.form-title p {
+    color: #5e5e5e;
+}
+.textbox {
+    width : 360px;
+    border: none;
+    border-bottom: 2px solid #9d9d9d;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+}
+input[type=radio] {
+    display: none;
+}
+.gender {
+    margin-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.radio01 {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 10px;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.radio01::before {
+    background: #fff;
+    border: 1px solid #a5a5a5;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    width: 16px;
+    top: 7px;
+    left: 65px;
+    position: absolute;
+}
+.radio01::after {
+    background: #5bf273;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    top: 11px;
+    left: 69px;
+    opacity: 0;
+    position: absolute;
+    transform: scale3d(.3,.3,1);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+input[type=radio]:checked + .radio01::before {
+    border-color:rgb(61, 61, 61);
+}
+input[type=radio]:checked + .radio01::after {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
+.ticket-container {
+    padding-bottom: 40px;
+}
+.ticket-select {
+    margin-left: 20px;
+    margin-right: 220px;
+    margin-top: 40px;
+}
+.ticket-select select {
+    border: none;
+    outline: none;
+    text-overflow: ellipsis;
+    background: transparent;
+    appearance: none;
+}
+.ticket-select.ticket-select-dress {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    background: #ffff;
+}
+.ticket-select.ticket-select-dress::before {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #666666;
+}
+.ticket-select.ticket-select-dress::after {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    bottom: 0;
+    width: 1px;
+    content: "";
+    border-left: 1px solid #bbbbbb;
+}
+.ticket-select-dress select {
+    padding-top: 8px;
+    padding-right: 100%;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    color: #666666;
+}
+.send {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/*ボタンアニメーション*/
+.button {
+    display: inline-block;
+    width: 200px;
+    height: 54px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 54px;
+    outline: none;
+    font-size: 2.2rem;
+  }
+  .button::before,
+  .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .button,
+  .button::before,
+  .button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .button {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #666666;
+    line-height: 50px;
+  }
+  .button:hover {
+    background-color: #fff;
+    border-color: #5bf273;
+    color: #5bf273;
+  }
+  .button::before,
+  .button::after {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .button::before {
+    right: 0;
+  }
+  .button::after {
+    left: 0;
+  }
+  .button:hover::before,
+  .button:hover::after {
+    width: 0;
+    background-color: #5bf273;
+  }
+.border {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid 1px #fff;
+}
+.border-middle {
+    position: relative;
+}
+.border-middle-object {
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    border-left: solid 1px #fff;
+}
+.top {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    display: block;
+    text-decoration: none;
+}
+.companyLogo {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+.companyLogo img {
+    width: 25%;
+    padding: 60px;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 375px) {
+    body {
+        min-width: 320px;
+    }
+    .firstView {
+        display: none;
+    }
+    .firstView_iphone {
+        display: block;
+    }
+    .firstView_iphone img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container {
+        max-width: 1146px;
+        margin: 0 4.5%;
+    }
+    .bread ul {
+        margin-top: 2px;
+    }
+    .bread li a {
+        font-size: 1.2rem;
+    }
+    .bread li::after {
+        margin-left: 0px;
+        font-size: 1.2rem;
+    }
+    .form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form h1 {
+        font-size: 1.7rem;
+        margin-bottom: 3px;
+    }
+    .form h2 {
+        font-size: 1.5rem;
+    }
+    .form p {
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+    }
+    .textbox {
+        width: 83%;
+        font-size: 1.4rem;
+    }
+    .gender {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .radio01 {
+        font-size: 1.4rem;
+    }
+    .radio01::before {
+        top: 1px;
+        left: 50px;
+    }
+    .radio01::after {
+        top: 5px;
+        left: 54px;
+    }
+    .ticket-select {
+        margin-right: 20px;
+    }
+    .ticket-select.ticket-select-dress::before {
+        right: 11px;
+    }
+    .ticket-select.ticket-select-dress::after {
+        right: 33px;
+    }
+    .ticket-select-dress select {
+        padding-right: 40%;
+    }
+    .send {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .button {
+        width: 50%;
+        height: 40px;
+        font-size: 2rem;
+        line-height: 36px;
+    }
+    .border-middle-object {
+        height: 22px;
+    }
+    .top {
+        font-size: 1.8rem;
+        margin-top: 23px;
+    }
+    .companyLogo {
+        margin-top: 60px;
+    }
+}

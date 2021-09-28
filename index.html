@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="firstView">
+        <img src="./asset/img/firstView.jpg" id="#top" alt="ファーストビュー">
+    </div>
+    <div class="firstView_iphone">
+        <img src="./asset/img/firstView_responsive.jpg" id="#top" alt="ファーストビュー">
+    </div>
+    <div class="container">
+        <div class="bread">
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">施設予約</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <h1>キャンペーン応募フォーム</h1>
+            <h2>キャンペーン応募期間</h2>
+            <h2>9月22日〜10月11日</h2>
+            <p>※必須</p>
+        </div>
+        <div class="form form-height">
+            <div class="form-title">
+                <h2>名前<span>*</span></h2>
+                <input type="text" placeholder="回答を入力" name="名前" class="textbox">
+            </div>
+        </div>
+        <div class="form form-height">
+            <div class="form-title form-title-height">
+                <h2>性別<span>*</span></h2>
+                <p>あなたの性別を教えてください。</p>
+                <div class="gender">
+                    <input type="radio" id="01-A" name="radio01" checked="checked">
+                    <label for="01-A" class="radio01">男性</label>
+                    <input type="radio" id="01-B" name="radio01">
+                    <label for="01-B" class="radio01">女性</label>        
+                </div>
+            </div>
+        </div>
+        <div class="form form-height">
+            <div class="form-title">
+                <h2>住所<span>*</span></h2>
+                <input type="text" placeholder="回答を入力" name="名前" class="textbox">
+            </div>
+        </div>
+        <div class="form form-height">
+            <div class="form-title">
+                <h2>メールアドレス<span>*</span></h2>
+                <input type="text" placeholder="回答を入力" name="名前" class="textbox">
+            </div>
+        </div>
+        <div class="form form-height">
+            <div class="form-title">
+                <h2>クーポンの種類</h2>
+                <div class="ticket-container">
+                    <div class="ticket-select ticket-select-dress">
+                        <select name="ticket" id="ticket-select">
+                            <option value=""></option>
+                            <option value="sell">格安サウナリゾート</option>
+                            <option value="advanced">上級者オススメサウナ</option>
+                            <option value="private">個室サウナ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="send">
+            <a class="button" href="#">送信</a>
+        </div>
+    </div>
+    <div class="border"></div>
+        <div class="border-middle">
+            <div class="border-middle-object"></div>
+        </div>
+        <a href="#top" class="top" id="btn-backToTop">Top</a>
+    <div class="companyLogo">
+        <img src="./asset/img/SAUNASTUDY.png" alt="ブランドロゴ">
+    </div>
+    <script>
+        var px_change = 1;
+        window.addEventListener('scroll', function(e) {
+            var scrollTop = window.pageYOffset ||
+            document.documentElement.scrollTop;
+            
+        } 
+        );
+    </script>
+</body>
+</html>
